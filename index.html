@@ -1,0 +1,490 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="styles.css">
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/35d8865ade.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  
+  <body style="background-color: #f7f6f4;">
+    <!-- OVERLAY -->
+    <div class="overlay first"></div>
+    <div class="overlay second"></div>
+    <div class="overlay third"></div>
+
+    <!-- navbar - adjusted padding -->
+    <nav class="font-bold nav fixed top-0 left-0 w-full bg-[#f7f6f4] z-50">
+      <div class="max-w-6xl mx-auto px-6 md:px-10 py-5 flex flex-wrap items-center justify-between">
+        <a href="https://instagram.com/syhaabira" class="relative group flex items-center space-x-3 rtl:space-x-reverse">
+          <span class="self-center text-xl z-[2] whitespace-nowrap text-indigo-800">Shabiraa.</span>
+          <i class="absolute group-hover:-right-2 group-hover:rotate-[0deg] group-hover:text-[1rem] group-hover:top-1 -top-1 right-0 z-[1] transition-all ease-in-out duration-200 fa-solid fa-star text-[2.4rem] text-pink-300 group-hover:text-pink-500 rotate-[20deg]"></i>
+        </a>
+    
+        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+          <button type="button" class="text-white bg-pink-500 hover:bg-indigo-800 focus:ring-4 font-semibold transition-color duration-100 ease-in cursor-pointer focus:outline-none focus:ring-blue-300 rounded-lg text-sm px-4 py-2 text-center">Get Contact</button>
+          <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-cta" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+            </svg>
+          </button>
+        </div>
+    
+        <div class="items-center justify-between font-semibold hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+          <ul class="nav-link flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+            <li><a href="#hero" class="block py-2 transition-color ease-in duration-100 px-3 md:p-0 relative text-indigo-800 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-pink-400">Home</a></li>
+            <li><a href="#abt" class="block py-2 transition-color ease-in duration-100 px-3 md:p-0 relative text-indigo-800 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-pink-400">About</a></li>
+            <li><a href="#popular" class="block py-2 transition-color ease-in duration-100 px-3 md:p-0 relative text-indigo-800 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-pink-400">Projects</a></li>
+            <li><a href="#certificate" class="block py-2 transition-color ease-in duration-100 px-3 md:p-0 relative text-indigo-800 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-pink-400">Certificate</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navend -->
+
+    <!-- home - reduced sizes -->
+    <div id="hero" class="hero flex flex-col mx-auto px-6 md:px-16 mt-24 md:mt-28">
+      <div class="text mx-auto anime-text">
+        <h1 class="portfolio-title-smaller">
+          My <span class="text-pink-500">Portfolio</span>
+        </h1>
+      </div>
+      <div class="img">
+        <img src="img/WhatsApp Image 2025-03-13 at 03.00.29.jpeg" alt="" class="object-cover filter grayscale home_img w-full h-90 items-center flex mx-auto"> 
+      </div>
+    </div>
+    <!-- homend -->
+
+    <!-- abt - reduced sizes -->
+    <div id="abt" class="aboutt mt-20 mb-20">
+      <div class="abt-title text-3xl mx-auto text-center text-pink-500 font-bold mb-16 underline underline-offset-15 anime-text">About <span class="text-indigo-700">Me</span></div>
+      <div class="flex flex-col md:flex-row justify-center items-center h-auto mx-auto mt-10 px-6 md:px-16">
+
+        <!-- Left Side: Text & Line -->
+        <div class="flex items-center space-x-4 md:space-x-6 lg:space-x-8 w-full md:w-1/2 mb-6 md:mb-0">
+          <!-- Vertical Line -->
+          <div class="w-1 h-64 bg-indigo-800 rounded-md"></div>
+
+          <!-- Text Content -->
+          <div class="anime-text">
+            <p class="text-indigo-800 font-semibold text-base leading-relaxed uppercase">Hello, my name is</p>
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-indigo-900 leading-tight">
+              Shabira Syahla A.
+            </h1>
+            <p class="text-pink-500 text-xl mt-2 font-semibold leading-relaxed">SMK Informatika Pesat Student</p>
+            <p class="text-gray-600 mt-3 max-w-md leading-relaxed text-sm md:text-base">
+              Passionate about technology, creativity, and digital innovation. Let's connect and build something amazing together!
+            </p>
+            <div class="font-semibold mt-4">
+              <a href="#" class="text-indigo-800 hover:text-pink-500 hover:bg-pink-400 home__button">See My Projects</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Image -->
+        <div class="home_img flex md:w-1/3 max-w-xs bg-white border border-gray-200 rounded-3xl shadow-lg items-center space-y-3 md:space-y-4 lg:space-y-6 mb-4 md:mb-0 flex-col">
+          <a href="#">
+            <img class="rounded-4xl object-cover p-6 pb-0" src="img/WhatsApp Image 2025-03-13 at 04.28.03.jpeg" alt="Profile Image" />
+          </a>
+
+          <div class="px-6 pb-6">
+            <div class="my-name flex flex-row items-center space-x-4 mb-2">
+              <h5 class="text-xl font-bold tracking-tight text-gray-700">
+                Shabira Syahla.
+              </h5>
+              <p class="text-sm font-normal text-gray-400">She/Her</p>
+            </div>
+            
+            <div class="card-contain flex flex-row items-center space-x-2 mb-1">
+              <i class="w-4 fa-solid fa-cake-candles text-gray-700"></i>
+              <p class="text-gray-600 text-sm">17 September 2008.</p>
+            </div>
+            <div class="card-contain flex flex-row items-center space-x-2 mb-1">
+              <i class="w-4 fa-solid fa-star text-gray-700"></i>
+              <p class=" text-gray-600 text-sm">16 Years Old.</p>
+            </div>
+            <div class="card-contain flex flex-row items-center space-x-2 mb-1">
+              <i class="fa-solid w-4 fa-location-dot text-gray-700"></i>
+              <p class="text-gray-600 text-sm">Bogor</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- edu -->
+    <div class="education flex flex-col md:flex-row justify-center items-center h-auto mx-auto mt-15 px-6 md:px-16">
+      
+      <!-- Left Side (Education) -->
+      <div class="flex flex-col items-center w-full md:w-1/2 mb-6 md:mb-0">
+        <h1 class="text-pink-500 font-bold text-3xl mb-6">EDUCATION</h1>
+
+        <div class="text-center">
+          <p class="text-pink-500">Elementary School:</p>
+          <p class="text-pink-500 font-semibold mb-3">Ibnu Abbas Integrated Islamic Elementary School</p>
+
+          <p class="text-pink-500">Junior High School:</p>
+          <p class="text-pink-500 font-semibold mb-3">Al Mustarih Islamic Junior High School</p>
+
+          <p class="text-pink-500">Senior High School:</p>
+          <p class="text-pink-500 font-semibold mb-3">Pesat Informatics Vocational High School</p>
+        </div>
+      </div>
+
+      <!-- Right Side (Expertise) -->
+      <div class="flex flex-col items-center w-full md:w-1/2">
+        <h1 class="text-pink-500 font-bold text-3xl mb-10">EXPERTISE</h1>
+
+        <div class="grid grid-cols-2 gap-8 text-center">
+          <div class="imgg">
+            <img src="img/PHP-logo.svg" alt="PHP Logo" class="w-16 mx-auto">
+            <p class="text-indigo-700 font-bold mt-2 text-xl">PHP</p>
+          </div>
+          <div class="imgg">
+            <img src="img/JS.png" alt="JavaScript Logo" class="w-14 mx-auto">
+            <p class="text-indigo-700 font-bold mt-2 text-xl">JavaScript</p>
+          </div>
+          <div class="imgg">
+            <img src="img/HTML.png" alt="HTML Logo" class="w-16 mx-auto">
+            <p class="text-indigo-700 font-bold mt-2 text-xl">HTML</p>
+          </div>
+          <div class="imgg">
+            <img src="img/CSS.png" alt="CSS Logo" class="w-24 mx-auto">
+            <p class="text-indigo-700 font-bold mt-2 text-xl">CSS</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project - Improved -->
+    <section id="popular" class="py-16 px-4 md:px-10">
+      <div class="abt-title text-3xl mx-auto text-center text-pink-500 font-bold mb-10 underline underline-offset-15 anime-text">My <span class="text-indigo-700">Projects</span></div>
+      
+      <div class="project-container max-w-6xl mx-auto">
+        <!-- Project Filter -->
+        <div class="project-filter flex flex-wrap justify-center gap-3 mb-10">
+          <button class="filter-btn active px-4 py-2 rounded-full bg-indigo-700 text-white hover:bg-pink-500 transition-colors duration-300" data-filter="all">All</button>
+          <button class="filter-btn px-4 py-2 rounded-full bg-gray-200 text-indigo-800 hover:bg-pink-500 hover:text-white transition-colors duration-300" data-filter="design">Design</button>
+          <button class="filter-btn px-4 py-2 rounded-full bg-gray-200 text-indigo-800 hover:bg-pink-500 hover:text-white transition-colors duration-300" data-filter="web">Web</button>
+          <button class="filter-btn px-4 py-2 rounded-full bg-gray-200 text-indigo-800 hover:bg-pink-500 hover:text-white transition-colors duration-300" data-filter="other">Other</button>
+        </div>
+        
+        <!-- Projects Grid -->
+        <div class="projects-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Project 1 -->
+          <div class="project-card" data-category="design">
+            <div class="relative overflow-hidden rounded-xl shadow-md group">
+              <img src="project-img/figma_full.jpg" alt="Foodie Project" class="w-full h-64 object-cover object-center transition-transform duration-500 group-hover:scale-110">
+              <div class="absolute inset-0 bg-gradient-to-t from-indigo-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                <div class="p-6 w-full">
+                  <h3 class="text-white text-xl font-bold">Foodie</h3>
+                  <p class="text-gray-200 mb-4">Using Figma</p>
+                  <button onclick="showProjectDetails('foodie')" class="bg-pink-500 text-white py-2 px-4 rounded-lg hover:bg-pink-600 transition-colors duration-300 w-full flex items-center justify-center gap-2">
+                    View Details <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project 2 -->
+          <div class="project-card" data-category="web">
+            <div class="relative overflow-hidden rounded-xl shadow-md group">
+              <img src="project-img/techeduca.png" alt="Tech-educa Project" class="w-full h-64 object-cover object-center transition-transform duration-500 group-hover:scale-110">
+              <div class="absolute inset-0 bg-gradient-to-t from-indigo-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                <div class="p-6 w-full">
+                  <h3 class="text-white text-xl font-bold">Tech-educa</h3>
+                  <p class="text-gray-200 mb-4">Using HTML and CSS</p>
+                  <button onclick="showProjectDetails('techeduca')" class="bg-pink-500 text-white py-2 px-4 rounded-lg hover:bg-pink-600 transition-colors duration-300 w-full flex items-center justify-center gap-2">
+                    View Details <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project 3 -->
+          <div class="project-card" data-category="web">
+            <div class="relative overflow-hidden rounded-xl shadow-md group">
+              <img src="project-img/Website qurban.png" alt="Bilik Qurban Project" class="w-full h-64 object-cover object-center transition-transform duration-500 group-hover:scale-110">
+              <div class="absolute inset-0 bg-gradient-to-t from-indigo-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                <div class="p-6 w-full">
+                  <h3 class="text-white text-xl font-bold">Bilik Qurban</h3>
+                  <p class="text-gray-200 mb-4">Using WordPress</p>
+                  <button onclick="showProjectDetails('qurban')" class="bg-pink-500 text-white py-2 px-4 rounded-lg hover:bg-pink-600 transition-colors duration-300 w-full flex items-center justify-center gap-2">
+                    View Details <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project 4 -->
+          <div class="project-card" data-category="web">
+            <div class="relative overflow-hidden rounded-xl shadow-md group">
+              <img src="project-img/wedding.png" alt="Wedding Invitation Project" class="w-full h-64 object-cover object-center transition-transform duration-500 group-hover:scale-110">
+              <div class="absolute inset-0 bg-gradient-to-t from-indigo-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                <div class="p-6 w-full">
+                  <h3 class="text-white text-xl font-bold">Wedding Invitation</h3>
+                  <p class="text-gray-200 mb-4">Using Bootstrap</p>
+                  <button onclick="showProjectDetails('wedding')" class="bg-pink-500 text-white py-2 px-4 rounded-lg hover:bg-pink-600 transition-colors duration-300 w-full flex items-center justify-center gap-2">
+                    View Details <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project 5 -->
+          <div class="project-card" data-category="web">
+            <div class="relative overflow-hidden rounded-xl shadow-md group">
+              <img src="project-img/ticket.png" alt="Ticket Transaction Project" class="w-full h-64 object-cover object-center transition-transform duration-500 group-hover:scale-110">
+              <div class="absolute inset-0 bg-gradient-to-t from-indigo-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                <div class="p-6 w-full">
+                  <h3 class="text-white text-xl font-bold">Ticket Transaction</h3>
+                  <p class="text-gray-200 mb-4">Using PHP and TailWind</p>
+                  <button onclick="showProjectDetails('ticket')" class="bg-pink-500 text-white py-2 px-4 rounded-lg hover:bg-pink-600 transition-colors duration-300 w-full flex items-center justify-center gap-2">
+                    View Details <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Project Details Modal -->
+    <div id="project-modal" class="fixed inset-0 z-50 flex items-center justify-center hidden">
+      <div class="absolute inset-0 bg-black/70" onclick="closeProjectModal()"></div>
+      <div class="relative bg-white rounded-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto p-6 md:p-8 mx-4">
+        <button onclick="closeProjectModal()" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700">
+          <i class="fa-solid fa-xmark text-2xl"></i>
+        </button>
+        
+        <div id="project-content" class="mt-4">
+          <!-- Content will be dynamically inserted here -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Certificate Section - Improved -->
+    <section id="certificate" class="certificate-section py-16 px-4 md:px-16">
+      <div class="abt-title text-3xl mx-auto text-center text-pink-500 font-bold mb-10 underline underline-offset-15 anime-text">My <span class="text-indigo-700">Certificate</span></div>
+      
+      <div class="certificate-container max-w-4xl mx-auto">
+        <div class="certificate-wrapper relative">
+          <img src="img/WhatsApp Image 2025-03-14 at 04.55.47.jpeg" alt="My Certificate" class="w-full h-auto object-contain mx-auto shadow-lg rounded-lg border-2 border-pink-200 filter grayscale hover:grayscale-0 transition-all duration-300" />
+          
+          <div class="certificate-overlay absolute inset-0 bg-gradient-to-t from-indigo-900/30 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end justify-center">
+            <div class="p-4 text-center">
+              <a href="" class="bg-pink-500 text-white py-2 px-6 rounded-full hover:bg-indigo-700 transition-colors duration-300 shadow-lg">
+                View Full Certificate
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact - added email button -->
+    <section id="contact" class="py-16 md:px-6 lg:px-8">
+      <div class="mx-auto px-4 md:px-10 max-w-6xl">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-indigo-700 underline underline-offset-10 decoration-pink-500 mb-4">Get In Touch</h2>
+              <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                  Feel free to reach out using the form below.
+              </p>
+          </div>
+          
+          <form id="contactForm" class="max-w-3xl mx-auto bg-white rounded-lg shadow-lg p-6 md:p-8">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div class="space-y-2">
+                      <label for="name" class="text-lg font-medium text-gray-700">
+                          Name <span class="text-red-500">*</span>
+                      </label>
+                      <input
+                          id="name"
+                          name="name"
+                          placeholder="Your name"
+                          class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50"
+                          required
+                      />
+                  </div>
+                  
+                  <div class="space-y-2">
+                      <label for="email" class="text-lg font-medium text-gray-700">
+                          Email <span class="text-red-500">*</span>
+                      </label>
+                      <input
+                          id="email"
+                          name="email"
+                          type="email"
+                          placeholder="Your email address"
+                          class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50"
+                          required
+                      />
+                  </div>
+              </div>
+              
+              
+              <div class="mt-6 space-y-2">
+                  <label for="message" class="text-lg font-medium text-gray-700">
+                      Message <span class="text-red-500">*</span>
+                  </label>
+                  <textarea
+                      id="message"
+                      name="message"
+                      placeholder="Your message"
+                      class="w-full min-h-[150px] px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50"
+                      required
+                  ></textarea>
+              </div>
+              
+              <div class="mt-8">
+                  <button 
+                      type="submit" 
+                      id="submitButton"
+                      class="bg-pink-500 text-white px-8 py-2.5 rounded-md hover:bg-indigo-800 transition-colors focus:outline-none focus:ring-2 focus:ring-primary/50"
+                  >
+                      Send Message
+                  </button>
+              </div>
+          </form>
+          
+          <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div class="text-center p-6 rounded-lg bg-pink-500 shadow-sm">
+                  <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 text-primary mb-4">
+                      <i class="text-4xl fa-solid fa-envelope text-white"></i>
+                  </div>
+                  <h3 class="text-white text-xl font-semibold mb-2">Email</h3>
+                  <p class="text-white mb-3">aylashabira17@gmail.com</p>
+                  <a href="mailto:aylashabira17@gmail.com" class="inline-block bg-white text-pink-500 hover:bg-indigo-800 hover:text-white px-4 py-2 rounded-full transition-colors duration-300 font-medium">
+                    Send Email
+                  </a>
+              </div>
+              <div class="text-center p-6 rounded-lg bg-indigo-700 shadow-sm">
+                  <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 text-primary mb-4">
+                      <i class="text-4xl fa-solid fa-location-dot text-white"></i>
+                  </div>
+                  <h3 class="text-white text-xl font-semibold mb-2">Location</h3>
+                  <p class="text-white mb-3">Town House, Mutiara PasirKuda, Bogor, Indonesia.</p>
+                  <a href="https://maps.google.com/?q=Mutiara+PasirKuda+Bogor" target="_blank" class="inline-block bg-white text-indigo-700 hover:bg-pink-500 hover:text-white px-4 py-2 rounded-full transition-colors duration-300 font-medium">
+                    View on Map
+                  </a>
+              </div>
+              <div class="text-center p-6 rounded-lg bg-pink-500 shadow-sm">
+                  <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 text-primary mb-4">
+                      <i class="text-4xl fa-solid fa-phone text-white"></i>
+                  </div>
+                  <h3 class="text-white text-xl font-semibold mb-2">Phone</h3>
+                  <p class="text-white mb-3">+62-813-1669-2619</p>
+                  <a href="tel:+6281316692619" class="inline-block bg-white text-pink-500 hover:bg-indigo-800 hover:text-white px-4 py-2 rounded-full transition-colors duration-300 font-medium">
+                    Call Now
+                  </a>
+              </div>
+          </div>
+      </div>
+
+      <!-- Toast notification -->
+      <div id="toast" class="fixed bottom-4 right-4 bg-white border border-gray-200 rounded-lg shadow-lg p-4 transform translate-y-full opacity-0 transition-all duration-300 max-w-xs">
+          <div class="flex items-center">
+              <div id="toastIcon" class="flex-shrink-0 w-6 h-6 mr-3"></div>
+              <div>
+                  <h4 id="toastTitle" class="font-semibold text-gray-900"></h4>
+                  <p id="toastMessage" class="text-sm text-gray-600"></p>
+              </div>
+          </div>
+      </div>
+    </section>
+    <!-- end -->
+    
+    <!-- Footer - Improved -->
+    <footer class="bg-indigo-900 text-white py-12">
+      <div class="container mx-auto px-4 md:px-10 max-w-6xl">
+        <div class="footer-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Quick links -->
+          <div class="footer-section">
+            <h3 class="text-xl font-semibold mb-4 text-pink-400 pb-2 relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-10 after:h-0.5 after:bg-pink-400">
+              Quick Links
+            </h3>
+            <ul class="footer-links space-y-2">
+              <li><a href="#hero" class="hover:text-pink-400 transition-colors duration-200">Home</a></li>
+              <li><a href="#abt" class="hover:text-pink-400 transition-colors duration-200">About Me</a></li>
+              <li><a href="#popular" class="hover:text-pink-400 transition-colors duration-200">Projects</a></li>
+              <li><a href="#certificate" class="hover:text-pink-400 transition-colors duration-200">Certificate</a></li>
+              <li><a href="#contact" class="hover:text-pink-400 transition-colors duration-200">Contact</a></li>
+            </ul>
+          </div>
+          
+          <!-- Contact info -->
+          <div class="footer-section">
+            <h3 class="text-xl font-semibold mb-4 text-pink-400 pb-2 relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-10 after:h-0.5 after:bg-pink-400">
+              Contact Me
+            </h3>
+            <div class="contact-info space-y-3">
+              <div class="contact-item flex items-center space-x-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-pink-400"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                <span>+62-813-1669-2619</span>
+              </div>
+              <div class="contact-item flex items-center space-x-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-pink-400"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <span>shabiraa@gmail.com</span>
+              </div>
+              <div class="contact-item flex items-center space-x-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-pink-400"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Bogor, Indonesia.</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Social Media -->
+          <div class="footer-section">
+            <h3 class="text-xl font-semibold mb-4 text-pink-400 pb-2 relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-10 after:h-0.5 after:bg-pink-400">
+              Follow Me
+            </h3>
+            <div class="social-links flex space-x-4">
+              <a href="#" class="w-10 h-10 rounded-full bg-indigo-800 flex items-center justify-center hover:bg-pink-500 transition-colors duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+              </a>
+              <a href="#" class="w-10 h-10 rounded-full bg-indigo-800 flex items-center justify-center hover:bg-pink-500 transition-colors duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+              </a>
+              <a href="#" class="w-10 h-10 rounded-full bg-indigo-800 flex items-center justify-center hover:bg-pink-500 transition-colors duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+              </a>
+              <a href="#" class="w-10 h-10 rounded-full bg-indigo-800 flex items-center justify-center hover:bg-pink-500 transition-colors duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Copyright -->
+        <div class="mt-8 pt-6 border-t border-indigo-800 text-center">
+          <p class="text-xl font-semibold">&copy; 2025 Shabira Syahla. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.2.3/dist/lenis.min.js"></script> 
+    <script src="main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+  </body>
+</html>
