@@ -170,117 +170,102 @@
     </div>
 
     <!-- Project - Improved -->
-    <section id="popular" class="py-16 px-4 md:px-10">
-      <div class="abt-title text-3xl mx-auto text-center text-pink-500 font-bold mb-10 underline underline-offset-15 anime-text">My <span class="text-indigo-700">Projects</span></div>
-      
-      <div class="project-container max-w-6xl mx-auto">
-        <!-- Project Filter -->
-        <div class="project-filter flex flex-wrap justify-center gap-3 mb-10">
-          <button class="filter-btn active px-4 py-2 rounded-full bg-indigo-700 text-white hover:bg-pink-500 transition-colors duration-300" data-filter="all">All</button>
-          <button class="filter-btn px-4 py-2 rounded-full bg-gray-200 text-indigo-800 hover:bg-pink-500 hover:text-white transition-colors duration-300" data-filter="design">Design</button>
-          <button class="filter-btn px-4 py-2 rounded-full bg-gray-200 text-indigo-800 hover:bg-pink-500 hover:text-white transition-colors duration-300" data-filter="web">Web</button>
-          <button class="filter-btn px-4 py-2 rounded-full bg-gray-200 text-indigo-800 hover:bg-pink-500 hover:text-white transition-colors duration-300" data-filter="other">Other</button>
-        </div>
-        
-        <!-- Projects Grid -->
-        <div class="projects-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Project 1 -->
-          <div class="project-card" data-category="design">
-            <div class="relative overflow-hidden rounded-xl shadow-md group">
-              <img src="project-img/figma_full.jpg" alt="Foodie Project" class="w-full h-64 object-cover object-center transition-transform duration-500 group-hover:scale-110">
-              <div class="absolute inset-0 bg-gradient-to-t from-indigo-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                <div class="p-6 w-full">
-                  <h3 class="text-white text-xl font-bold">Foodie</h3>
-                  <p class="text-gray-200 mb-4">Using Figma</p>
-                  <button onclick="showProjectDetails('foodie')" class="bg-pink-500 text-white py-2 px-4 rounded-lg hover:bg-pink-600 transition-colors duration-300 w-full flex items-center justify-center gap-2">
-                    View Details <i class="fa-solid fa-arrow-right"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Project 2 -->
-          <div class="project-card" data-category="web">
-            <div class="relative overflow-hidden rounded-xl shadow-md group">
-              <img src="project-img/techeduca.png" alt="Tech-educa Project" class="w-full h-64 object-cover object-center transition-transform duration-500 group-hover:scale-110">
-              <div class="absolute inset-0 bg-gradient-to-t from-indigo-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                <div class="p-6 w-full">
-                  <h3 class="text-white text-xl font-bold">Tech-educa</h3>
-                  <p class="text-gray-200 mb-4">Using HTML and CSS</p>
-                  <button onclick="showProjectDetails('techeduca')" class="bg-pink-500 text-white py-2 px-4 rounded-lg hover:bg-pink-600 transition-colors duration-300 w-full flex items-center justify-center gap-2">
-                    View Details <i class="fa-solid fa-arrow-right"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Project 3 -->
-          <div class="project-card" data-category="web">
-            <div class="relative overflow-hidden rounded-xl shadow-md group">
-              <img src="project-img/Website qurban.png" alt="Bilik Qurban Project" class="w-full h-64 object-cover object-center transition-transform duration-500 group-hover:scale-110">
-              <div class="absolute inset-0 bg-gradient-to-t from-indigo-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                <div class="p-6 w-full">
-                  <h3 class="text-white text-xl font-bold">Bilik Qurban</h3>
-                  <p class="text-gray-200 mb-4">Using WordPress</p>
-                  <button onclick="showProjectDetails('qurban')" class="bg-pink-500 text-white py-2 px-4 rounded-lg hover:bg-pink-600 transition-colors duration-300 w-full flex items-center justify-center gap-2">
-                    View Details <i class="fa-solid fa-arrow-right"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Project 4 -->
-          <div class="project-card" data-category="web">
-            <div class="relative overflow-hidden rounded-xl shadow-md group">
-              <img src="project-img/wedding.png" alt="Wedding Invitation Project" class="w-full h-64 object-cover object-center transition-transform duration-500 group-hover:scale-110">
-              <div class="absolute inset-0 bg-gradient-to-t from-indigo-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                <div class="p-6 w-full">
-                  <h3 class="text-white text-xl font-bold">Wedding Invitation</h3>
-                  <p class="text-gray-200 mb-4">Using Bootstrap</p>
-                  <button onclick="showProjectDetails('wedding')" class="bg-pink-500 text-white py-2 px-4 rounded-lg hover:bg-pink-600 transition-colors duration-300 w-full flex items-center justify-center gap-2">
-                    View Details <i class="fa-solid fa-arrow-right"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Project 5 -->
-          <div class="project-card" data-category="web">
-            <div class="relative overflow-hidden rounded-xl shadow-md group">
-              <img src="project-img/ticket.png" alt="Ticket Transaction Project" class="w-full h-64 object-cover object-center transition-transform duration-500 group-hover:scale-110">
-              <div class="absolute inset-0 bg-gradient-to-t from-indigo-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                <div class="p-6 w-full">
-                  <h3 class="text-white text-xl font-bold">Ticket Transaction</h3>
-                  <p class="text-gray-200 mb-4">Using PHP and TailWind</p>
-                  <button onclick="showProjectDetails('ticket')" class="bg-pink-500 text-white py-2 px-4 rounded-lg hover:bg-pink-600 transition-colors duration-300 w-full flex items-center justify-center gap-2">
-                    View Details <i class="fa-solid fa-arrow-right"></i>
-                  </button>
-                </div>
-              </div>
+<section id="popular" class="py-16 px-4 md:px-10">
+  <div class="abt-title text-3xl mx-auto text-center text-pink-500 font-bold mb-10 underline underline-offset-15 anime-text">My <span class="text-indigo-700">Projects</span></div>
+  
+  <div class="project-container max-w-6xl mx-auto">
+    <!-- Project Filter -->
+    <div class="project-filter flex flex-wrap justify-center gap-3 mb-10">
+      <button class="filter-btn active px-4 py-2 rounded-full bg-indigo-700 text-white hover:bg-pink-500 transition-colors duration-300" data-filter="all">All</button>
+      <button class="filter-btn px-4 py-2 rounded-full bg-gray-200 text-indigo-800 hover:bg-pink-500 hover:text-white transition-colors duration-300" data-filter="design">Design</button>
+      <button class="filter-btn px-4 py-2 rounded-full bg-gray-200 text-indigo-800 hover:bg-pink-500 hover:text-white transition-colors duration-300" data-filter="web">Web</button>
+      <button class="filter-btn px-4 py-2 rounded-full bg-gray-200 text-indigo-800 hover:bg-pink-500 hover:text-white transition-colors duration-300" data-filter="other">Other</button>
+    </div>
+    
+    <!-- Projects Grid -->
+    <div class="projects-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Project 1 -->
+      <div class="project-card" data-category="design">
+        <div class="relative overflow-hidden rounded-xl shadow-md group">
+          <img src="project-img/figma_full.jpg" alt="Foodie Project" class="w-full h-64 object-cover object-center transition-transform duration-500 group-hover:scale-110">
+          <div class="absolute inset-0 bg-gradient-to-t from-indigo-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+            <div class="p-6 w-full">
+              <h3 class="text-white text-xl font-bold">Foodie</h3>
+              <p class="text-gray-200 mb-4">Using Figma</p>
+              <a href="https://www.figma.com/your-foodie-design" target="_blank" class="bg-pink-500 text-white py-2 px-4 rounded-lg hover:bg-pink-600 transition-colors duration-300 w-full flex items-center justify-center gap-2">
+                View Details <i class="fa-solid fa-external-link"></i>
+              </a>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    
-    <!-- Project Details Modal -->
-    <div id="project-modal" class="fixed inset-0 z-50 flex items-center justify-center hidden">
-      <div class="absolute inset-0 bg-black/70" onclick="closeProjectModal()"></div>
-      <div class="relative bg-white rounded-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto p-6 md:p-8 mx-4">
-        <button onclick="closeProjectModal()" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700">
-          <i class="fa-solid fa-xmark text-2xl"></i>
-        </button>
-        
-        <div id="project-content" class="mt-4">
-          <!-- Content will be dynamically inserted here -->
+      
+      <!-- Project 2 -->
+      <div class="project-card" data-category="web">
+        <div class="relative overflow-hidden rounded-xl shadow-md group">
+          <img src="project-img/techeduca.png" alt="Tech-educa Project" class="w-full h-64 object-cover object-center transition-transform duration-500 group-hover:scale-110">
+          <div class="absolute inset-0 bg-gradient-to-t from-indigo-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+            <div class="p-6 w-full">
+              <h3 class="text-white text-xl font-bold">Tech-educa</h3>
+              <p class="text-gray-200 mb-4">Using HTML and CSS</p>
+              <a href="https://your-techeduca-website.com" target="_blank" class="bg-pink-500 text-white py-2 px-4 rounded-lg hover:bg-pink-600 transition-colors duration-300 w-full flex items-center justify-center gap-2">
+                View Details <i class="fa-solid fa-external-link"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Project 3 -->
+      <div class="project-card" data-category="web">
+        <div class="relative overflow-hidden rounded-xl shadow-md group">
+          <img src="project-img/Website qurban.png" alt="Bilik Qurban Project" class="w-full h-64 object-cover object-center transition-transform duration-500 group-hover:scale-110">
+          <div class="absolute inset-0 bg-gradient-to-t from-indigo-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+            <div class="p-6 w-full">
+              <h3 class="text-white text-xl font-bold">Bilik Qurban</h3>
+              <p class="text-gray-200 mb-4">Using WordPress</p>
+              <a href="https://your-qurban-website.com" target="_blank" class="bg-pink-500 text-white py-2 px-4 rounded-lg hover:bg-pink-600 transition-colors duration-300 w-full flex items-center justify-center gap-2">
+                View Details <i class="fa-solid fa-external-link"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Project 4 -->
+      <div class="project-card" data-category="web">
+        <div class="relative overflow-hidden rounded-xl shadow-md group">
+          <img src="project-img/wedding.png" alt="Wedding Invitation Project" class="w-full h-64 object-cover object-center transition-transform duration-500 group-hover:scale-110">
+          <div class="absolute inset-0 bg-gradient-to-t from-indigo-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+            <div class="p-6 w-full">
+              <h3 class="text-white text-xl font-bold">Wedding Invitation</h3>
+              <p class="text-gray-200 mb-4">Using Bootstrap</p>
+              <a href="https://your-wedding-invitation.com" target="_blank" class="bg-pink-500 text-white py-2 px-4 rounded-lg hover:bg-pink-600 transition-colors duration-300 w-full flex items-center justify-center gap-2">
+                View Details <i class="fa-solid fa-external-link"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Project 5 -->
+      <div class="project-card" data-category="other">
+        <div class="relative overflow-hidden rounded-xl shadow-md group">
+          <img src="project-img/ticket.png" alt="Ticket Transaction Project" class="w-full h-64 object-cover object-center transition-transform duration-500 group-hover:scale-110">
+          <div class="absolute inset-0 bg-gradient-to-t from-indigo-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+            <div class="p-6 w-full">
+              <h3 class="text-white text-xl font-bold">Ticket Transaction</h3>
+              <p class="text-gray-200 mb-4">Using PHP and TailWind</p>
+              <a href="https://your-ticket-system.com" target="_blank" class="bg-pink-500 text-white py-2 px-4 rounded-lg hover:bg-pink-600 transition-colors duration-300 w-full flex items-center justify-center gap-2">
+                View Details <i class="fa-solid fa-external-link"></i>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
+  </div>
+</section>
     <!-- Certificate Section - Improved -->
     <section id="certificate" class="certificate-section py-16 px-4 md:px-16">
       <div class="abt-title text-3xl mx-auto text-center text-pink-500 font-bold mb-10 underline underline-offset-15 anime-text">My <span class="text-indigo-700">Certificate</span></div>
